@@ -26,15 +26,9 @@ class Solution {
             }
         }
         vector<int> ans;
-        if (note == 1) {
-            ans.push_back(1);
-            for (int i = 0; i < n; ++i) {
-                ans.push_back(digits[i]);
-            }
-        } else {
-            for (int i = 0; i < n; ++i) {
-                ans.push_back(digits[i]);
-            }
+        if (note == 1) ans.push_back(1);
+        for (int i = 0; i < n; ++i) {
+            ans.push_back(digits[i]);
         }
         return ans;
     }
